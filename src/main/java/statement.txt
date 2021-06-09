@@ -1,0 +1,24 @@
+1. User {
+    id,
+    name,
+    number,
+    email
+    blockedList: List<number>,
+    contactList: Map<number, Contact>,
+}
+
+2. Contact {
+
+}
+
+3. ContactType {
+    PERSONAL,
+    BUSINESS
+}
+
+
+Service -
+1. UserService -> register(name, number, email), AddtoContactList(User), blockContact(number), import(List<Users>),
+update(name, number, email);
+
+2. CallService -> search(
